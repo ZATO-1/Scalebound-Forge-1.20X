@@ -1,6 +1,9 @@
 package net.stefan.scalebound;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -13,6 +16,15 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.stefan.scalebound.block.ModBlocks;
+import net.stefan.scalebound.enchantment.ModEnchantments;
+import net.stefan.scalebound.fluid.ModFluidTypes;
+import net.stefan.scalebound.fluid.ModFluids;
+import net.stefan.scalebound.item.ModCreativeModeTabs;
+import net.stefan.scalebound.item.ModItemProperties;
+import net.stefan.scalebound.item.ModItems;
+import net.stefan.scalebound.loot.ModLootModifiers;
+import net.stefan.scalebound.villager.ModVillagers;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -35,10 +47,37 @@ public class ScaleboundMod {
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
+        // Register the items
+        ModItems.register(modEventBus);
+
+        // Register the blocks
+        ModBlocks.register(modEventBus);
+
+        // Register the creative tab
+        ModCreativeModeTabs.register(modEventBus);
+
+        // Register enchantments
+        ModEnchantments.register(modEventBus);
+
+        // Register Loot modifiers
+        ModLootModifiers.register(modEventBus);
+
+        // Register new villagers
+        ModVillagers.register(modEventBus);
+
+        // Register new wandering trader
+
+        // Register Fluids
+        ModFluidTypes.register(modEventBus);
+        ModFluids.register(modEventBus);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event){
-
+        event.enqueueWork(() ->{
+            ComposterBlock.COMPOSTABLES.put(ModItems.WILD_GARLIC.get(), 0.35f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.WILD_GARLIC_SEEDS.get(), 0.20f);
+        });
     }
 
     // Add the example block item to the building blocks tab
@@ -57,6 +96,15 @@ public class ScaleboundMod {
     public static class ClientModEvents{
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event){
+            event.enqueueWork(() ->{
+                //ModItemProperties.addCustomItemProperties();
+
+
+
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_BLOOD_WATER.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_BLOOD.get(), RenderType.translucent());
+
+            });
 
         }
     }

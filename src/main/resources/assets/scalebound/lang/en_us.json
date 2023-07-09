@@ -1,0 +1,16 @@
+{
+
+  "creativetab.scalebound_tab": "Scalebound Tab",
+
+  "item.scalebound.blood_infused_steel_ingot": "Blood Infused Steel Ingot",
+  "item.scalebound.steel_ingot": "Steel Ingot",
+  "item.scalebound.limestone_dust": "Limestone Dust",
+  "item.scalebound.wild_garlic": "Wild Garlic",
+
+  "block.scalebound.steel_block": "Steel Block",
+  "block.scalebound.grey_plank": "Grey Plank",
+  "block.scalebound.grey_stairs": "Grey Stairs",
+  "block.scalebound.grey_slabs": "Grey Slabs",
+
+  "enchantment.scalebound.life_steal": "Life Steal"
+}
