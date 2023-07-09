@@ -47,6 +47,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CURSED_HOE.get());
                         output.accept(ModItems.CURSED_PAXEL.get());
 
+                        output.accept(ModItems.ADVENTURER_AXE.get());
+                        output.accept(ModItems.SPEAR.get());
+
 
                         output.accept(ModBlocks.STEEL_BLOCK.get());
                         output.accept(ModBlocks.GREY_PLANK.get());

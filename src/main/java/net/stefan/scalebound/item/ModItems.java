@@ -59,28 +59,36 @@ public class ModItems {
             () -> new ShieldItem(new Item.Properties()));
 
     public static final RegistryObject<Item> ALUCARDS_DAGGER = ITEMS.register("alucards_dagger",
-            () -> new AlucardsDaggerItem(ModToolTiers.CURSED, 2, 3, new Item.Properties().durability(256)));
+            () -> new AlucardsDaggerItem(ModToolTiers.CURSED, 2, 1, new Item.Properties().durability(256)));
 
     public static final RegistryObject<Item> SACRIFICIAL_KNIFE = ITEMS.register("sacrificial_knife",
-            () -> new SwordItem(ModToolTiers.CURSED, 2, 3, new Item.Properties().durability(256)));
+            () -> new SwordItem(ModToolTiers.CURSED, 2, 1, new Item.Properties().durability(256)));
 
     // TOOLS
 
     public static final RegistryObject<Item> CURSED_AXE = ITEMS.register("cursed_axe",
-            () -> new AxeItem(ModToolTiers.CURSED, 2, 3, new Item.Properties().durability(256)));
+            () -> new AxeItem(ModToolTiers.CURSED, 2, 1, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> CURSED_PICKAXE = ITEMS.register("cursed_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.CURSED, 2, 3, new Item.Properties().durability(256)));
+            () -> new PickaxeItem(ModToolTiers.CURSED, 2, 1, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> CURSED_SHOVEL = ITEMS.register("cursed_shovel",
-            () -> new ShovelItem(ModToolTiers.CURSED, 2, 3, new Item.Properties().durability(256)));
+            () -> new ShovelItem(ModToolTiers.CURSED, 2, 1, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> CURSED_HOE = ITEMS.register("cursed_hoe",
-            () -> new HoeItem(ModToolTiers.CURSED, 2, 3, new Item.Properties().durability(256)));
+            () -> new HoeItem(ModToolTiers.CURSED, 2, 1, new Item.Properties().durability(256)));
     public static final RegistryObject<Item> CURSED_PAXEL = ITEMS.register("cursed_paxel",
-            () -> new PaxelItem(ModToolTiers.CURSED, 2, 3, new Item.Properties().durability(256)));
+            () -> new PaxelItem(ModToolTiers.CURSED, 2, 1, new Item.Properties().durability(256)));
 
     // ARMOR
 
     public static final RegistryObject<Item> WOLFE_HIDE = ITEMS.register("wolf_hide",
             () -> new Item(new Item.Properties()));
+
+    // 3D models
+
+    public static final RegistryObject<Item> ADVENTURER_AXE = ITEMS.register("adventurer_axe",
+            () -> new AxeItem(ModToolTiers.CURSED,2,1,new Item.Properties().durability(256)));
+
+    public static final RegistryObject<Item> SPEAR = ITEMS.register("spear",
+            () -> new TridentItem(new Item.Properties().durability(256)));
 
     // crops
 

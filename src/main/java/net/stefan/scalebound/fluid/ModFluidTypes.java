@@ -22,9 +22,9 @@ public class ModFluidTypes {
             DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, ScaleboundMod.MOD_ID);
 
     public static final RegistryObject<FluidType> BLOOD_FLUID_TYPE = registerFluidType("blood_fluid",
-            new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, WATER_OVERLAY_RL, 0xA1E038D0,
-                    new Vector3f(224f / 255f, 56f / 255f, 208f / 255f),
-                    FluidType.Properties.create().lightLevel(2).viscosity(5).density(15)));
+            new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, WATER_OVERLAY_RL, 0xA1950000,
+                    new Vector3f(132f / 255f, 0f / 255f, 0f / 255f),
+                    FluidType.Properties.create().lightLevel(1).viscosity(20).density(15)));
 
 
     private static RegistryObject<FluidType> registerFluidType(String name, FluidType fluidType) {
