@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "scalebound:block/grey_slabs"
+    },
+    "type=double": {
+      "model": "scalebound:block/grey_plank"
+    },
+    "type=top": {
+      "model": "scalebound:block/grey_slabs_top"
+    }
+  }
+}

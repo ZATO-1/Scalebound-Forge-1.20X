@@ -1,0 +1,9 @@
+// 1.20.1	2023-07-06T22:01:42.7693602	Loot Tables
+d685f67b8cd568093d6ec80b3d3dde61e3abea01 data/scalebound/loot_tables/blocks/frosted_ice.json
+c67065631225064448162f4c31248d51dd2a5cab data/scalebound/loot_tables/blocks/grey_plank.json
+4e5d1311de53fe800b99060356984acd3edd399d data/scalebound/loot_tables/blocks/grey_slabs.json
+539d30faee359109fcb3c5490c5b234d995e8d24 data/scalebound/loot_tables/blocks/grey_stairs.json
+cd72a9d15488ee03879efe7a12cdc81d380952f7 data/scalebound/loot_tables/blocks/potted_weeping_rose.json
+371fd629219c49d89e561c7cd0dd799c9cab6039 data/scalebound/loot_tables/blocks/steel_block.json
+0f4080f8fc109b26d9d1f2e3eaaa256f9e491cb9 data/scalebound/loot_tables/blocks/weeping_rose.json
+3152e47901534eab567caf5e9d8697212aff8078 data/scalebound/loot_tables/blocks/wild_garlic_crop.json

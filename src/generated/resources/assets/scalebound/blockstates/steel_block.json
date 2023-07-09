@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "scalebound:block/steel_block"
+    }
+  }
+}
