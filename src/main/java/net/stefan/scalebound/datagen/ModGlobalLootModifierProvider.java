@@ -26,9 +26,9 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.FERN).build(),
                 LootItemRandomChanceCondition.randomChance(0.50f).build() }, ModItems.WILD_GARLIC_SEEDS.get()));
 
-        /*add("wolf_hide_from_wolf", new AddItemModifier(new LootItemCondition[] {
-                LootItemKilledByPlayerCondition.killedByPlayer(EntityType.WOLF).build();
-                LootItemRandomChanceCondition.randomChance(1f).build() }, ModItems.WOLFE_HIDE.get()));*/
+        add("wolf_hide_from_wolf", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/wolf")).build()},
+                ModItems.WOLFE_HIDE.get()));
 
         add("raven_claw_from_jungle_temple", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build() },

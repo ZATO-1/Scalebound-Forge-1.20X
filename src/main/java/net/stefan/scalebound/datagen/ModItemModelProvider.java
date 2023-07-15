@@ -28,7 +28,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.WILD_GARLIC);
         simpleItem(ModItems.LIMESTONE_DUST);
         simpleItem(ModItems.BLOOD_ESSENCE);
+        simpleItem(ModItems.BROKEN_BONE);
 
+        simpleItem(ModItems.TEST);
 
         simpleItem(ModItems.WOLFE_HIDE);
 
@@ -39,6 +41,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handHeld(ModItems.ALUCARDS_DAGGER);
 
         handHeld(ModItems.SACRIFICIAL_KNIFE);
+        //handHeld(ModItems.SPEAR);
 
 
 

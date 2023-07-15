@@ -18,6 +18,8 @@ public class ModEnchantments {
                     () -> new LifeStealEnchantment(Enchantment.Rarity.COMMON, EnchantmentCategory.WEAPON,
                             EquipmentSlot.MAINHAND));
 
+
+
     public static void register(IEventBus eventBus) {
         ENCHANTMENTS.register(eventBus);
     }

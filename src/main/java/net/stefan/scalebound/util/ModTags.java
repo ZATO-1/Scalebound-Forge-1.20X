@@ -22,6 +22,8 @@ public class ModTags {
 
     public static class Blocks {
         public static final TagKey<Block> NEEDS_CURSED_TOOL = tag("needs_cursed_tool");
+
+        public static final TagKey<Block> NEEDS_BONE_TOOL = tag("needs_bone_tool");
         public static final TagKey<Block> PAXEL_MINEABLE = tag("mineable/paxel");
 
         private static TagKey<Block> tag(String name) {
